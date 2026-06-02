@@ -1,0 +1,1361 @@
+2026-06-02T08:43:22.956Z CLI info    Config : {"userName":"[REDACTED]","accessKey":"[REDACTED]","platforms":[{"platformName":"Android","appium:deviceName":"Samsung Galaxy S23 Ultra","appium:platformVersion":"13.0","appium:automationName":"UIAutomator2","appium:app":"bs://e8dc0ac6410d4d758dc736949321637e795ed77a","wdioService":"9.27.1"}],"isNonBstackA11yWDIO":false,"testObservability":true,"testContextOptions":{"skipSessionName":false,"skipSessionStatus":false,"sessionNameOmitTestTitle":false,"sessionNamePrependTopLevelSuiteTitle":false,"sessionNameFormat":""},"buildTag":[]}
+2026-06-02T08:43:22.957Z CLI info    Should start debug utility: undefined
+2026-06-02T08:43:22.959Z CLI info [testhub:module]   [b807e051-6b49-4684-9cba-7431243e8fb9]  Starting testhub from 51265:0
+2026-06-02T08:43:22.960Z CLI info   [b807e051-6b49-4684-9cba-7431243e8fb9]  [PRODUCTION] Making POST request to https://sdk.browserstack.com
+2026-06-02T08:43:22.961Z CLI info   [b807e051-6b49-4684-9cba-7431243e8fb9]  [PRODUCTION] Making GET request to https://hub.browserstack.com
+2026-06-02T08:43:23.569Z CLI info   [b807e051-6b49-4684-9cba-7431243e8fb9]  [PRODUCTION] Making GET request to https://hub-aps.browserstack.com
+2026-06-02T08:43:23.569Z CLI info   [b807e051-6b49-4684-9cba-7431243e8fb9]  [PRODUCTION] Making GET request to https://hub-euw.browserstack.com
+2026-06-02T08:43:23.570Z CLI info   [b807e051-6b49-4684-9cba-7431243e8fb9]  [PRODUCTION] Making GET request to https://hub-apse.browserstack.com
+2026-06-02T08:43:24.667Z CLI info [testhub:module]   [b807e051-6b49-4684-9cba-7431243e8fb9]  startBuild: response=jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy
+2026-06-02T08:43:24.669Z CLI info  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2026-06-02T08:43:25.956Z CLI info  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2026-06-02T08:43:27.114Z CLI error [percy:percy]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Percy unable to fetch project token: [object Object]
+2026-06-02T08:43:27.115Z CLI error  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  error invoking callback for eventName: {}
+2026-06-02T08:43:27.115Z CLI error  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Error: invalid percyToken=null
+    at /snapshot/browserstack-binary/cli/dist/index.js
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-06-02T08:43:27.116Z CLI info [appautomate:service]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Using app: bs://e8dc0ac6410d4d758dc736949321637e795ed77a
+2026-06-02T08:43:28.285Z CLI info [sdk:service]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Driver initialized as primary driver: platformIndex=0
+2026-06-02T08:43:53.075Z CLI info [testhub:request-queue-handler]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '7c3cd844-7038-4910-9747-e4854c759564',
+    integrations: { browserstack: [Object] }
+  }
+} to 51265:0
+2026-06-02T08:43:53.079Z CLI info [testhub:request-queue-handler]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Added the event {
+  event_type: 'TestRunStarted',
+  test_run: {
+    type: 'test',
+    framework: 'WebdriverIO-mocha',
+    uuid: '7c3cd844-7038-4910-9747-e4854c759564',
+    name: 'should fill out the input field',
+    body: {
+      lang: 'ecmascript',
+      code: 'async () => {\n' +
+        `    await $('~text-input').setValue("Hello from Appium!");\n` +
+        '\n' +
+        '    await expect(\n' +
+        '      $(\n' +
+        "        '~input-text-result'\n" +
+        '      )\n' +
+        '    ).toHaveText("Hello from Appium!");\n' +
+        '  }'
+    },
+    identifier: 'should fill out the input field',
+    scope: 'Forms test suite - should fill out the input field',
+    scopes: [ 'Forms test suite' ],
+    file_name: 'test/specs/android/forms.e2e.js',
+    vc_filepath: 'test/specs/android/forms.e2e.js',
+    location: 'test/specs/android/forms.e2e.js',
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2026-06-02T08:43:53.051Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: undefined,
+    retry_of: null,
+    custom_metadata: undefined,
+    tags: [],
+    customRerunParam: { rerun_name: undefined },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 51265:0
+2026-06-02T08:43:54.690Z CLI info [testhub:request-queue-handler]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Processing batch event [
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '7c3cd844-7038-4910-9747-e4854c759564',
+      integrations: {
+        browserstack: {
+          product: 'app-automate',
+          session_id: '836868d76c8b47b9667e89ac8e1aef2814b51e2c',
+          capabilities: {
+            platform: 'LINUX',
+            webStorageEnabled: false,
+            takesScreenshot: true,
+            javascriptEnabled: true,
+            databaseEnabled: false,
+            networkConnectionEnabled: true,
+            locationContextEnabled: false,
+            warnings: {},
+            desired: {
+              platformName: 'Android',
+              'bstack:options': { hostName: 'Swivel-MAC-005.local' },
+              'goog:chromeOptions': {},
+              newCommandTimeout: 0,
+              deviceName: 'Samsung Galaxy S23 Ultra',
+              chromedriverPorts: [ [ 18155, 18165 ] ],
+              chromedriverArgs: [ '--adb-port=5038' ],
+              automationName: 'UIAutomator2',
+              systemPort: 8205,
+              bundleID: 'com.wdiodemoapp',
+              bundleId: 'com.wdiodemoapp',
+              skipServerInstallation: true,
+              udid: 'RZCW31Q7LGY',
+              appPackage: 'com.wdiodemoapp',
+              appActivity: 'com.wdiodemoapp.MainActivity',
+              nativeWebScreenshot: true,
+              disableSuppressAccessibilityService: true
+            },
+            platformName: 'Android',
+            'bstack:options': { hostName: 'Swivel-MAC-005.local' },
+            'goog:chromeOptions': {},
+            newCommandTimeout: 0,
+            deviceName: 'RZCW31Q7LGY',
+            chromedriverPorts: [ [ 18155, 18165 ] ],
+            chromedriverArgs: [ '--adb-port=5038' ],
+            automationName: 'UIAutomator2',
+            systemPort: 8205,
+            bundleID: 'com.wdiodemoapp',
+            bundleId: 'com.wdiodemoapp',
+            skipServerInstallation: true,
+            udid: 'RZCW31Q7LGY',
+            appPackage: 'com.wdiodemoapp',
+            appActivity: 'com.wdiodemoapp.MainActivity',
+            nativeWebScreenshot: true,
+            disableSuppressAccessibilityService: true,
+            deviceUDID: 'RZCW31Q7LGY',
+            deviceApiLevel: 33,
+            platformVersion: '13',
+            deviceScreenSize: '1080x2316',
+            deviceScreenDensity: 450,
+            deviceModel: 'SM-S918B',
+            deviceManufacturer: 'samsung',
+            pixelRatio: 2.8125,
+            statBarHeight: 75,
+            viewportRect: { left: 0, top: 75, width: 1080, height: 2031 }
+          },
+          platform: 'Android',
+          platform_version: '13',
+          browser: undefined,
+          browser_version: undefined
+        }
+      }
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    test_run: {
+      type: 'test',
+      framework: 'WebdriverIO-mocha',
+      uuid: '7c3cd844-7038-4910-9747-e4854c759564',
+      name: 'should fill out the input field',
+      body: {
+        lang: 'ecmascript',
+        code: 'async () => {\n' +
+          `    await $('~text-input').setValue("Hello from Appium!");\n` +
+          '\n' +
+          '    await expect(\n' +
+          '      $(\n' +
+          "        '~input-text-result'\n" +
+          '      )\n' +
+          '    ).toHaveText("Hello from Appium!");\n' +
+          '  }'
+      },
+      identifier: 'should fill out the input field',
+      scope: 'Forms test suite - should fill out the input field',
+      scopes: [ 'Forms test suite' ],
+      file_name: 'test/specs/android/forms.e2e.js',
+      vc_filepath: 'test/specs/android/forms.e2e.js',
+      location: 'test/specs/android/forms.e2e.js',
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2026-06-02T08:43:53.051Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: undefined,
+      retry_of: null,
+      custom_metadata: undefined,
+      tags: [],
+      customRerunParam: { rerun_name: undefined },
+      hooks: [],
+      product_map: {
+        observability: true,
+        accessibility: false,
+        percy: false,
+        automate: false,
+        app_automate: true
+      }
+    },
+    logs: []
+  }
+] to 51265:0
+2026-06-02T08:43:54.692Z CLI info  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-06-02T08:43:55.161Z CLI warn [TEST REPORTING AND ANALYTICS:webdriverio:mocha]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  TestRunFinished: event={"test_framework_name":"WebdriverIO-mocha","test_framework_version":"9.27.1","test_logs":[],"test_hooks_finished":{},"test_hooks_started":{},"test_uuid":"7c3cd844-7038-4910-9747-e4854c759564","test_result":"passed","test_hook_last_started":"TestFrameworkState.TEST","test_id":"Forms test suite - should fill out the input field","test_name":"should fill out the input field","test_code":"async () => {\n    await $('~text-input').setValue(\"Hello from Appium!\");\n\n    await expect(\n      $(\n        '~input-text-result'\n      )\n    ).toHaveText(\"Hello from Appium!\");\n  }","test_file_path":"test/specs/android/forms.e2e.js","test_location":"test/specs/android/forms.e2e.js","test_scope":"Forms test suite - should fill out the input field","test_scopes":["Forms test suite"],"test_started_at":"2026-06-02T08:43:53.051Z","automate_session_name":"Forms test suite - should fill out the input field","test_failure":null,"test_failure_reason":null,"test_failure_type":null,"test_ended_at":"2026-06-02T08:43:55.155Z","test_hook_last_finished":"TestFrameworkState.TEST","automate_session_status":"passed","test_deferred":true,"logs":[]}
+2026-06-02T08:43:55.162Z CLI info [testhub:request-queue-handler]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Added the event {
+  event_type: 'TestRunFinished',
+  test_run: {
+    type: 'test',
+    framework: 'WebdriverIO-mocha',
+    uuid: '7c3cd844-7038-4910-9747-e4854c759564',
+    name: 'should fill out the input field',
+    body: {
+      lang: 'ecmascript',
+      code: 'async () => {\n' +
+        `    await $('~text-input').setValue("Hello from Appium!");\n` +
+        '\n' +
+        '    await expect(\n' +
+        '      $(\n' +
+        "        '~input-text-result'\n" +
+        '      )\n' +
+        '    ).toHaveText("Hello from Appium!");\n' +
+        '  }'
+    },
+    identifier: 'should fill out the input field',
+    scope: 'Forms test suite - should fill out the input field',
+    scopes: [ 'Forms test suite' ],
+    file_name: 'test/specs/android/forms.e2e.js',
+    vc_filepath: 'test/specs/android/forms.e2e.js',
+    location: 'test/specs/android/forms.e2e.js',
+    result: 'passed',
+    duration_in_ms: 2104,
+    started_at: '2026-06-02T08:43:53.051Z',
+    finished_at: '2026-06-02T08:43:55.155Z',
+    failure: null,
+    failure_type: null,
+    failure_reason: null,
+    retry_of: null,
+    custom_metadata: undefined,
+    tags: [],
+    customRerunParam: { rerun_name: undefined },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 51265:0
+2026-06-02T08:43:55.626Z CLI info [testhub:request-queue-handler]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '10c17323-87eb-4362-8ed6-f7fd8de57620',
+    integrations: { browserstack: [Object] }
+  }
+} to 51265:0
+2026-06-02T08:43:55.627Z CLI info [testhub:request-queue-handler]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Added the event {
+  event_type: 'TestRunStarted',
+  test_run: {
+    type: 'test',
+    framework: 'WebdriverIO-mocha',
+    uuid: '10c17323-87eb-4362-8ed6-f7fd8de57620',
+    name: 'should turn switch on and off',
+    body: {
+      lang: 'ecmascript',
+      code: 'async () => {\n' +
+        "    await $('~switch').click();\n" +
+        `    await expect($('~switch-text')).toHaveText("Click to turn the switch OFF");\n` +
+        "    await $('~switch').click();\n" +
+        `    await expect($('~switch-text')).toHaveText("Click to turn the switch ON");\n` +
+        '  }'
+    },
+    identifier: 'should turn switch on and off',
+    scope: 'Forms test suite - should turn switch on and off',
+    scopes: [ 'Forms test suite' ],
+    file_name: 'test/specs/android/forms.e2e.js',
+    vc_filepath: 'test/specs/android/forms.e2e.js',
+    location: 'test/specs/android/forms.e2e.js',
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2026-06-02T08:43:55.616Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: undefined,
+    retry_of: null,
+    custom_metadata: undefined,
+    tags: [],
+    customRerunParam: { rerun_name: undefined },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 51265:0
+2026-06-02T08:43:56.690Z CLI info [testhub:request-queue-handler]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Processing batch event [
+  {
+    event_type: 'TestRunFinished',
+    test_run: {
+      type: 'test',
+      framework: 'WebdriverIO-mocha',
+      uuid: '7c3cd844-7038-4910-9747-e4854c759564',
+      name: 'should fill out the input field',
+      body: {
+        lang: 'ecmascript',
+        code: 'async () => {\n' +
+          `    await $('~text-input').setValue("Hello from Appium!");\n` +
+          '\n' +
+          '    await expect(\n' +
+          '      $(\n' +
+          "        '~input-text-result'\n" +
+          '      )\n' +
+          '    ).toHaveText("Hello from Appium!");\n' +
+          '  }'
+      },
+      identifier: 'should fill out the input field',
+      scope: 'Forms test suite - should fill out the input field',
+      scopes: [ 'Forms test suite' ],
+      file_name: 'test/specs/android/forms.e2e.js',
+      vc_filepath: 'test/specs/android/forms.e2e.js',
+      location: 'test/specs/android/forms.e2e.js',
+      result: 'passed',
+      duration_in_ms: 2104,
+      started_at: '2026-06-02T08:43:53.051Z',
+      finished_at: '2026-06-02T08:43:55.155Z',
+      failure: null,
+      failure_type: null,
+      failure_reason: null,
+      retry_of: null,
+      custom_metadata: undefined,
+      tags: [],
+      customRerunParam: { rerun_name: undefined },
+      hooks: [],
+      product_map: {
+        observability: true,
+        accessibility: false,
+        percy: false,
+        automate: false,
+        app_automate: true
+      }
+    },
+    logs: []
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '10c17323-87eb-4362-8ed6-f7fd8de57620',
+      integrations: {
+        browserstack: {
+          product: 'app-automate',
+          session_id: '836868d76c8b47b9667e89ac8e1aef2814b51e2c',
+          capabilities: {
+            platform: 'LINUX',
+            webStorageEnabled: false,
+            takesScreenshot: true,
+            javascriptEnabled: true,
+            databaseEnabled: false,
+            networkConnectionEnabled: true,
+            locationContextEnabled: false,
+            warnings: {},
+            desired: {
+              platformName: 'Android',
+              'bstack:options': { hostName: 'Swivel-MAC-005.local' },
+              'goog:chromeOptions': {},
+              newCommandTimeout: 0,
+              deviceName: 'Samsung Galaxy S23 Ultra',
+              chromedriverPorts: [ [ 18155, 18165 ] ],
+              chromedriverArgs: [ '--adb-port=5038' ],
+              automationName: 'UIAutomator2',
+              systemPort: 8205,
+              bundleID: 'com.wdiodemoapp',
+              bundleId: 'com.wdiodemoapp',
+              skipServerInstallation: true,
+              udid: 'RZCW31Q7LGY',
+              appPackage: 'com.wdiodemoapp',
+              appActivity: 'com.wdiodemoapp.MainActivity',
+              nativeWebScreenshot: true,
+              disableSuppressAccessibilityService: true
+            },
+            platformName: 'Android',
+            'bstack:options': { hostName: 'Swivel-MAC-005.local' },
+            'goog:chromeOptions': {},
+            newCommandTimeout: 0,
+            deviceName: 'RZCW31Q7LGY',
+            chromedriverPorts: [ [ 18155, 18165 ] ],
+            chromedriverArgs: [ '--adb-port=5038' ],
+            automationName: 'UIAutomator2',
+            systemPort: 8205,
+            bundleID: 'com.wdiodemoapp',
+            bundleId: 'com.wdiodemoapp',
+            skipServerInstallation: true,
+            udid: 'RZCW31Q7LGY',
+            appPackage: 'com.wdiodemoapp',
+            appActivity: 'com.wdiodemoapp.MainActivity',
+            nativeWebScreenshot: true,
+            disableSuppressAccessibilityService: true,
+            deviceUDID: 'RZCW31Q7LGY',
+            deviceApiLevel: 33,
+            platformVersion: '13',
+            deviceScreenSize: '1080x2316',
+            deviceScreenDensity: 450,
+            deviceModel: 'SM-S918B',
+            deviceManufacturer: 'samsung',
+            pixelRatio: 2.8125,
+            statBarHeight: 75,
+            viewportRect: { left: 0, top: 75, width: 1080, height: 2031 }
+          },
+          platform: 'Android',
+          platform_version: '13',
+          browser: undefined,
+          browser_version: undefined
+        }
+      }
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    test_run: {
+      type: 'test',
+      framework: 'WebdriverIO-mocha',
+      uuid: '10c17323-87eb-4362-8ed6-f7fd8de57620',
+      name: 'should turn switch on and off',
+      body: {
+        lang: 'ecmascript',
+        code: 'async () => {\n' +
+          "    await $('~switch').click();\n" +
+          `    await expect($('~switch-text')).toHaveText("Click to turn the switch OFF");\n` +
+          "    await $('~switch').click();\n" +
+          `    await expect($('~switch-text')).toHaveText("Click to turn the switch ON");\n` +
+          '  }'
+      },
+      identifier: 'should turn switch on and off',
+      scope: 'Forms test suite - should turn switch on and off',
+      scopes: [ 'Forms test suite' ],
+      file_name: 'test/specs/android/forms.e2e.js',
+      vc_filepath: 'test/specs/android/forms.e2e.js',
+      location: 'test/specs/android/forms.e2e.js',
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2026-06-02T08:43:55.616Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: undefined,
+      retry_of: null,
+      custom_metadata: undefined,
+      tags: [],
+      customRerunParam: { rerun_name: undefined },
+      hooks: [],
+      product_map: {
+        observability: true,
+        accessibility: false,
+        percy: false,
+        automate: false,
+        app_automate: true
+      }
+    },
+    logs: []
+  }
+] to 51265:0
+2026-06-02T08:43:56.691Z CLI info  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-06-02T08:43:57.795Z CLI warn [TEST REPORTING AND ANALYTICS:webdriverio:mocha]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  TestRunFinished: event={"test_framework_name":"WebdriverIO-mocha","test_framework_version":"9.27.1","test_logs":[],"test_hooks_finished":{},"test_hooks_started":{},"test_uuid":"10c17323-87eb-4362-8ed6-f7fd8de57620","test_result":"passed","test_hook_last_started":"TestFrameworkState.TEST","test_id":"Forms test suite - should turn switch on and off","test_name":"should turn switch on and off","test_code":"async () => {\n    await $('~switch').click();\n    await expect($('~switch-text')).toHaveText(\"Click to turn the switch OFF\");\n    await $('~switch').click();\n    await expect($('~switch-text')).toHaveText(\"Click to turn the switch ON\");\n  }","test_file_path":"test/specs/android/forms.e2e.js","test_location":"test/specs/android/forms.e2e.js","test_scope":"Forms test suite - should turn switch on and off","test_scopes":["Forms test suite"],"test_started_at":"2026-06-02T08:43:55.616Z","automate_session_name":"Forms test suite - should turn switch on and off","test_failure":null,"test_failure_reason":null,"test_failure_type":null,"test_ended_at":"2026-06-02T08:43:57.793Z","test_hook_last_finished":"TestFrameworkState.TEST","automate_session_status":"passed","test_deferred":true,"logs":[]}
+2026-06-02T08:43:57.796Z CLI info [testhub:request-queue-handler]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Added the event {
+  event_type: 'TestRunFinished',
+  test_run: {
+    type: 'test',
+    framework: 'WebdriverIO-mocha',
+    uuid: '10c17323-87eb-4362-8ed6-f7fd8de57620',
+    name: 'should turn switch on and off',
+    body: {
+      lang: 'ecmascript',
+      code: 'async () => {\n' +
+        "    await $('~switch').click();\n" +
+        `    await expect($('~switch-text')).toHaveText("Click to turn the switch OFF");\n` +
+        "    await $('~switch').click();\n" +
+        `    await expect($('~switch-text')).toHaveText("Click to turn the switch ON");\n` +
+        '  }'
+    },
+    identifier: 'should turn switch on and off',
+    scope: 'Forms test suite - should turn switch on and off',
+    scopes: [ 'Forms test suite' ],
+    file_name: 'test/specs/android/forms.e2e.js',
+    vc_filepath: 'test/specs/android/forms.e2e.js',
+    location: 'test/specs/android/forms.e2e.js',
+    result: 'passed',
+    duration_in_ms: 2177,
+    started_at: '2026-06-02T08:43:55.616Z',
+    finished_at: '2026-06-02T08:43:57.793Z',
+    failure: null,
+    failure_type: null,
+    failure_reason: null,
+    retry_of: null,
+    custom_metadata: undefined,
+    tags: [],
+    customRerunParam: { rerun_name: undefined },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 51265:0
+2026-06-02T08:43:58.127Z CLI info [testhub:request-queue-handler]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '60f80d57-3b3f-47a5-8c2e-c5df27a20d82',
+    integrations: { browserstack: [Object] }
+  }
+} to 51265:0
+2026-06-02T08:43:58.129Z CLI info [testhub:request-queue-handler]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Added the event {
+  event_type: 'TestRunStarted',
+  test_run: {
+    type: 'test',
+    framework: 'WebdriverIO-mocha',
+    uuid: '60f80d57-3b3f-47a5-8c2e-c5df27a20d82',
+    name: 'should select a dropdown item',
+    body: {
+      lang: 'ecmascript',
+      code: 'async () => {\n' +
+        `    await $('//*[@text="Select an item..."]').click();\n` +
+        `    await $('//android.widget.CheckedTextView[@resource-id="android:id/text1" and @text="This app is awesome"]').click();\n` +
+        `    await expect($('//android.widget.EditText[@text="This app is awesome"]')).toHaveText("This app is awesome");\n` +
+        '  }'
+    },
+    identifier: 'should select a dropdown item',
+    scope: 'Forms test suite - should select a dropdown item',
+    scopes: [ 'Forms test suite' ],
+    file_name: 'test/specs/android/forms.e2e.js',
+    vc_filepath: 'test/specs/android/forms.e2e.js',
+    location: 'test/specs/android/forms.e2e.js',
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2026-06-02T08:43:58.115Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: undefined,
+    retry_of: null,
+    custom_metadata: undefined,
+    tags: [],
+    customRerunParam: { rerun_name: undefined },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 51265:0
+2026-06-02T08:43:58.689Z CLI info [testhub:request-queue-handler]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Processing batch event [
+  {
+    event_type: 'TestRunFinished',
+    test_run: {
+      type: 'test',
+      framework: 'WebdriverIO-mocha',
+      uuid: '10c17323-87eb-4362-8ed6-f7fd8de57620',
+      name: 'should turn switch on and off',
+      body: {
+        lang: 'ecmascript',
+        code: 'async () => {\n' +
+          "    await $('~switch').click();\n" +
+          `    await expect($('~switch-text')).toHaveText("Click to turn the switch OFF");\n` +
+          "    await $('~switch').click();\n" +
+          `    await expect($('~switch-text')).toHaveText("Click to turn the switch ON");\n` +
+          '  }'
+      },
+      identifier: 'should turn switch on and off',
+      scope: 'Forms test suite - should turn switch on and off',
+      scopes: [ 'Forms test suite' ],
+      file_name: 'test/specs/android/forms.e2e.js',
+      vc_filepath: 'test/specs/android/forms.e2e.js',
+      location: 'test/specs/android/forms.e2e.js',
+      result: 'passed',
+      duration_in_ms: 2177,
+      started_at: '2026-06-02T08:43:55.616Z',
+      finished_at: '2026-06-02T08:43:57.793Z',
+      failure: null,
+      failure_type: null,
+      failure_reason: null,
+      retry_of: null,
+      custom_metadata: undefined,
+      tags: [],
+      customRerunParam: { rerun_name: undefined },
+      hooks: [],
+      product_map: {
+        observability: true,
+        accessibility: false,
+        percy: false,
+        automate: false,
+        app_automate: true
+      }
+    },
+    logs: []
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '60f80d57-3b3f-47a5-8c2e-c5df27a20d82',
+      integrations: {
+        browserstack: {
+          product: 'app-automate',
+          session_id: '836868d76c8b47b9667e89ac8e1aef2814b51e2c',
+          capabilities: {
+            platform: 'LINUX',
+            webStorageEnabled: false,
+            takesScreenshot: true,
+            javascriptEnabled: true,
+            databaseEnabled: false,
+            networkConnectionEnabled: true,
+            locationContextEnabled: false,
+            warnings: {},
+            desired: {
+              platformName: 'Android',
+              'bstack:options': { hostName: 'Swivel-MAC-005.local' },
+              'goog:chromeOptions': {},
+              newCommandTimeout: 0,
+              deviceName: 'Samsung Galaxy S23 Ultra',
+              chromedriverPorts: [ [ 18155, 18165 ] ],
+              chromedriverArgs: [ '--adb-port=5038' ],
+              automationName: 'UIAutomator2',
+              systemPort: 8205,
+              bundleID: 'com.wdiodemoapp',
+              bundleId: 'com.wdiodemoapp',
+              skipServerInstallation: true,
+              udid: 'RZCW31Q7LGY',
+              appPackage: 'com.wdiodemoapp',
+              appActivity: 'com.wdiodemoapp.MainActivity',
+              nativeWebScreenshot: true,
+              disableSuppressAccessibilityService: true
+            },
+            platformName: 'Android',
+            'bstack:options': { hostName: 'Swivel-MAC-005.local' },
+            'goog:chromeOptions': {},
+            newCommandTimeout: 0,
+            deviceName: 'RZCW31Q7LGY',
+            chromedriverPorts: [ [ 18155, 18165 ] ],
+            chromedriverArgs: [ '--adb-port=5038' ],
+            automationName: 'UIAutomator2',
+            systemPort: 8205,
+            bundleID: 'com.wdiodemoapp',
+            bundleId: 'com.wdiodemoapp',
+            skipServerInstallation: true,
+            udid: 'RZCW31Q7LGY',
+            appPackage: 'com.wdiodemoapp',
+            appActivity: 'com.wdiodemoapp.MainActivity',
+            nativeWebScreenshot: true,
+            disableSuppressAccessibilityService: true,
+            deviceUDID: 'RZCW31Q7LGY',
+            deviceApiLevel: 33,
+            platformVersion: '13',
+            deviceScreenSize: '1080x2316',
+            deviceScreenDensity: 450,
+            deviceModel: 'SM-S918B',
+            deviceManufacturer: 'samsung',
+            pixelRatio: 2.8125,
+            statBarHeight: 75,
+            viewportRect: { left: 0, top: 75, width: 1080, height: 2031 }
+          },
+          platform: 'Android',
+          platform_version: '13',
+          browser: undefined,
+          browser_version: undefined
+        }
+      }
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    test_run: {
+      type: 'test',
+      framework: 'WebdriverIO-mocha',
+      uuid: '60f80d57-3b3f-47a5-8c2e-c5df27a20d82',
+      name: 'should select a dropdown item',
+      body: {
+        lang: 'ecmascript',
+        code: 'async () => {\n' +
+          `    await $('//*[@text="Select an item..."]').click();\n` +
+          `    await $('//android.widget.CheckedTextView[@resource-id="android:id/text1" and @text="This app is awesome"]').click();\n` +
+          `    await expect($('//android.widget.EditText[@text="This app is awesome"]')).toHaveText("This app is awesome");\n` +
+          '  }'
+      },
+      identifier: 'should select a dropdown item',
+      scope: 'Forms test suite - should select a dropdown item',
+      scopes: [ 'Forms test suite' ],
+      file_name: 'test/specs/android/forms.e2e.js',
+      vc_filepath: 'test/specs/android/forms.e2e.js',
+      location: 'test/specs/android/forms.e2e.js',
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2026-06-02T08:43:58.115Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: undefined,
+      retry_of: null,
+      custom_metadata: undefined,
+      tags: [],
+      customRerunParam: { rerun_name: undefined },
+      hooks: [],
+      product_map: {
+        observability: true,
+        accessibility: false,
+        percy: false,
+        automate: false,
+        app_automate: true
+      }
+    },
+    logs: []
+  }
+] to 51265:0
+2026-06-02T08:43:58.691Z CLI info  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-06-02T08:44:00.889Z CLI warn [TEST REPORTING AND ANALYTICS:webdriverio:mocha]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  TestRunFinished: event={"test_framework_name":"WebdriverIO-mocha","test_framework_version":"9.27.1","test_logs":[],"test_hooks_finished":{},"test_hooks_started":{},"test_uuid":"60f80d57-3b3f-47a5-8c2e-c5df27a20d82","test_result":"passed","test_hook_last_started":"TestFrameworkState.TEST","test_id":"Forms test suite - should select a dropdown item","test_name":"should select a dropdown item","test_code":"async () => {\n    await $('//*[@text=\"Select an item...\"]').click();\n    await $('//android.widget.CheckedTextView[@resource-id=\"android:id/text1\" and @text=\"This app is awesome\"]').click();\n    await expect($('//android.widget.EditText[@text=\"This app is awesome\"]')).toHaveText(\"This app is awesome\");\n  }","test_file_path":"test/specs/android/forms.e2e.js","test_location":"test/specs/android/forms.e2e.js","test_scope":"Forms test suite - should select a dropdown item","test_scopes":["Forms test suite"],"test_started_at":"2026-06-02T08:43:58.115Z","automate_session_name":"Forms test suite - should select a dropdown item","test_failure":null,"test_failure_reason":null,"test_failure_type":null,"test_ended_at":"2026-06-02T08:44:00.884Z","test_hook_last_finished":"TestFrameworkState.TEST","automate_session_status":"passed","test_deferred":true,"logs":[]}
+2026-06-02T08:44:00.890Z CLI info [testhub:request-queue-handler]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Added the event {
+  event_type: 'TestRunFinished',
+  test_run: {
+    type: 'test',
+    framework: 'WebdriverIO-mocha',
+    uuid: '60f80d57-3b3f-47a5-8c2e-c5df27a20d82',
+    name: 'should select a dropdown item',
+    body: {
+      lang: 'ecmascript',
+      code: 'async () => {\n' +
+        `    await $('//*[@text="Select an item..."]').click();\n` +
+        `    await $('//android.widget.CheckedTextView[@resource-id="android:id/text1" and @text="This app is awesome"]').click();\n` +
+        `    await expect($('//android.widget.EditText[@text="This app is awesome"]')).toHaveText("This app is awesome");\n` +
+        '  }'
+    },
+    identifier: 'should select a dropdown item',
+    scope: 'Forms test suite - should select a dropdown item',
+    scopes: [ 'Forms test suite' ],
+    file_name: 'test/specs/android/forms.e2e.js',
+    vc_filepath: 'test/specs/android/forms.e2e.js',
+    location: 'test/specs/android/forms.e2e.js',
+    result: 'passed',
+    duration_in_ms: 2769,
+    started_at: '2026-06-02T08:43:58.115Z',
+    finished_at: '2026-06-02T08:44:00.884Z',
+    failure: null,
+    failure_type: null,
+    failure_reason: null,
+    retry_of: null,
+    custom_metadata: undefined,
+    tags: [],
+    customRerunParam: { rerun_name: undefined },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 51265:0
+2026-06-02T08:44:01.158Z CLI info [testhub:request-queue-handler]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'f2a1d6f0-3639-45c4-a208-3be5df2629e9',
+    integrations: { browserstack: [Object] }
+  }
+} to 51265:0
+2026-06-02T08:44:01.160Z CLI info [testhub:request-queue-handler]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Added the event {
+  event_type: 'TestRunStarted',
+  test_run: {
+    type: 'test',
+    framework: 'WebdriverIO-mocha',
+    uuid: 'f2a1d6f0-3639-45c4-a208-3be5df2629e9',
+    name: 'should be able to click on the active button and then close the modal',
+    body: {
+      lang: 'ecmascript',
+      code: 'async () => {\n' +
+        `    await $('//android.widget.TextView[@text="Active"]').click();\n` +
+        '\n' +
+        '    // Wait for the dialog message to appear\n' +
+        `    const dialogMessage = await $('//*[@resource-id="android:id/message"]');\n` +
+        '    await dialogMessage.waitForDisplayed();\n' +
+        '    await expect(dialogMessage).toHaveText("This button is active");\n' +
+        '\n' +
+        '    // Click OK button to close the modal\n' +
+        `    const okButton = await $('//*[@resource-id="android:id/button1"]');\n` +
+        '    await okButton.click();\n' +
+        '\n' +
+        '    // Verify modal is closed by checking the message is no longer displayed\n' +
+        '    await expect(dialogMessage).not.toBeDisplayed();\n' +
+        '  }'
+    },
+    identifier: 'should be able to click on the active button and then close the modal',
+    scope: 'Forms test suite - should be able to click on the active button and then close the modal',
+    scopes: [ 'Forms test suite' ],
+    file_name: 'test/specs/android/forms.e2e.js',
+    vc_filepath: 'test/specs/android/forms.e2e.js',
+    location: 'test/specs/android/forms.e2e.js',
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2026-06-02T08:44:01.149Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: undefined,
+    retry_of: null,
+    custom_metadata: undefined,
+    tags: [],
+    customRerunParam: { rerun_name: undefined },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 51265:0
+2026-06-02T08:44:02.690Z CLI info [testhub:request-queue-handler]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Processing batch event [
+  {
+    event_type: 'TestRunFinished',
+    test_run: {
+      type: 'test',
+      framework: 'WebdriverIO-mocha',
+      uuid: '60f80d57-3b3f-47a5-8c2e-c5df27a20d82',
+      name: 'should select a dropdown item',
+      body: {
+        lang: 'ecmascript',
+        code: 'async () => {\n' +
+          `    await $('//*[@text="Select an item..."]').click();\n` +
+          `    await $('//android.widget.CheckedTextView[@resource-id="android:id/text1" and @text="This app is awesome"]').click();\n` +
+          `    await expect($('//android.widget.EditText[@text="This app is awesome"]')).toHaveText("This app is awesome");\n` +
+          '  }'
+      },
+      identifier: 'should select a dropdown item',
+      scope: 'Forms test suite - should select a dropdown item',
+      scopes: [ 'Forms test suite' ],
+      file_name: 'test/specs/android/forms.e2e.js',
+      vc_filepath: 'test/specs/android/forms.e2e.js',
+      location: 'test/specs/android/forms.e2e.js',
+      result: 'passed',
+      duration_in_ms: 2769,
+      started_at: '2026-06-02T08:43:58.115Z',
+      finished_at: '2026-06-02T08:44:00.884Z',
+      failure: null,
+      failure_type: null,
+      failure_reason: null,
+      retry_of: null,
+      custom_metadata: undefined,
+      tags: [],
+      customRerunParam: { rerun_name: undefined },
+      hooks: [],
+      product_map: {
+        observability: true,
+        accessibility: false,
+        percy: false,
+        automate: false,
+        app_automate: true
+      }
+    },
+    logs: []
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'f2a1d6f0-3639-45c4-a208-3be5df2629e9',
+      integrations: {
+        browserstack: {
+          product: 'app-automate',
+          session_id: '836868d76c8b47b9667e89ac8e1aef2814b51e2c',
+          capabilities: {
+            platform: 'LINUX',
+            webStorageEnabled: false,
+            takesScreenshot: true,
+            javascriptEnabled: true,
+            databaseEnabled: false,
+            networkConnectionEnabled: true,
+            locationContextEnabled: false,
+            warnings: {},
+            desired: {
+              platformName: 'Android',
+              'bstack:options': { hostName: 'Swivel-MAC-005.local' },
+              'goog:chromeOptions': {},
+              newCommandTimeout: 0,
+              deviceName: 'Samsung Galaxy S23 Ultra',
+              chromedriverPorts: [ [ 18155, 18165 ] ],
+              chromedriverArgs: [ '--adb-port=5038' ],
+              automationName: 'UIAutomator2',
+              systemPort: 8205,
+              bundleID: 'com.wdiodemoapp',
+              bundleId: 'com.wdiodemoapp',
+              skipServerInstallation: true,
+              udid: 'RZCW31Q7LGY',
+              appPackage: 'com.wdiodemoapp',
+              appActivity: 'com.wdiodemoapp.MainActivity',
+              nativeWebScreenshot: true,
+              disableSuppressAccessibilityService: true
+            },
+            platformName: 'Android',
+            'bstack:options': { hostName: 'Swivel-MAC-005.local' },
+            'goog:chromeOptions': {},
+            newCommandTimeout: 0,
+            deviceName: 'RZCW31Q7LGY',
+            chromedriverPorts: [ [ 18155, 18165 ] ],
+            chromedriverArgs: [ '--adb-port=5038' ],
+            automationName: 'UIAutomator2',
+            systemPort: 8205,
+            bundleID: 'com.wdiodemoapp',
+            bundleId: 'com.wdiodemoapp',
+            skipServerInstallation: true,
+            udid: 'RZCW31Q7LGY',
+            appPackage: 'com.wdiodemoapp',
+            appActivity: 'com.wdiodemoapp.MainActivity',
+            nativeWebScreenshot: true,
+            disableSuppressAccessibilityService: true,
+            deviceUDID: 'RZCW31Q7LGY',
+            deviceApiLevel: 33,
+            platformVersion: '13',
+            deviceScreenSize: '1080x2316',
+            deviceScreenDensity: 450,
+            deviceModel: 'SM-S918B',
+            deviceManufacturer: 'samsung',
+            pixelRatio: 2.8125,
+            statBarHeight: 75,
+            viewportRect: { left: 0, top: 75, width: 1080, height: 2031 }
+          },
+          platform: 'Android',
+          platform_version: '13',
+          browser: undefined,
+          browser_version: undefined
+        }
+      }
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    test_run: {
+      type: 'test',
+      framework: 'WebdriverIO-mocha',
+      uuid: 'f2a1d6f0-3639-45c4-a208-3be5df2629e9',
+      name: 'should be able to click on the active button and then close the modal',
+      body: {
+        lang: 'ecmascript',
+        code: 'async () => {\n' +
+          `    await $('//android.widget.TextView[@text="Active"]').click();\n` +
+          '\n' +
+          '    // Wait for the dialog message to appear\n' +
+          `    const dialogMessage = await $('//*[@resource-id="android:id/message"]');\n` +
+          '    await dialogMessage.waitForDisplayed();\n' +
+          '    await expect(dialogMessage).toHaveText("This button is active");\n' +
+          '\n' +
+          '    // Click OK button to close the modal\n' +
+          `    const okButton = await $('//*[@resource-id="android:id/button1"]');\n` +
+          '    await okButton.click();\n' +
+          '\n' +
+          '    // Verify modal is closed by checking the message is no longer displayed\n' +
+          '    await expect(dialogMessage).not.toBeDisplayed();\n' +
+          '  }'
+      },
+      identifier: 'should be able to click on the active button and then close the modal',
+      scope: 'Forms test suite - should be able to click on the active button and then close the modal',
+      scopes: [ 'Forms test suite' ],
+      file_name: 'test/specs/android/forms.e2e.js',
+      vc_filepath: 'test/specs/android/forms.e2e.js',
+      location: 'test/specs/android/forms.e2e.js',
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2026-06-02T08:44:01.149Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: undefined,
+      retry_of: null,
+      custom_metadata: undefined,
+      tags: [],
+      customRerunParam: { rerun_name: undefined },
+      hooks: [],
+      product_map: {
+        observability: true,
+        accessibility: false,
+        percy: false,
+        automate: false,
+        app_automate: true
+      }
+    },
+    logs: []
+  }
+] to 51265:0
+2026-06-02T08:44:02.693Z CLI info  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-06-02T08:44:03.983Z CLI warn [TEST REPORTING AND ANALYTICS:webdriverio:mocha]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  TestRunFinished: event={"test_framework_name":"WebdriverIO-mocha","test_framework_version":"9.27.1","test_logs":[],"test_hooks_finished":{},"test_hooks_started":{},"test_uuid":"f2a1d6f0-3639-45c4-a208-3be5df2629e9","test_result":"passed","test_hook_last_started":"TestFrameworkState.TEST","test_id":"Forms test suite - should be able to click on the active button and then close the modal","test_name":"should be able to click on the active button and then close the modal","test_code":"async () => {\n    await $('//android.widget.TextView[@text=\"Active\"]').click();\n\n    // Wait for the dialog message to appear\n    const dialogMessage = await $('//*[@resource-id=\"android:id/message\"]');\n    await dialogMessage.waitForDisplayed();\n    await expect(dialogMessage).toHaveText(\"This button is active\");\n\n    // Click OK button to close the modal\n    const okButton = await $('//*[@resource-id=\"android:id/button1\"]');\n    await okButton.click();\n\n    // Verify modal is closed by checking the message is no longer displayed\n    await expect(dialogMessage).not.toBeDisplayed();\n  }","test_file_path":"test/specs/android/forms.e2e.js","test_location":"test/specs/android/forms.e2e.js","test_scope":"Forms test suite - should be able to click on the active button and then close the modal","test_scopes":["Forms test suite"],"test_started_at":"2026-06-02T08:44:01.149Z","automate_session_name":"Forms test suite - should be able to click on the active button and then close the modal","test_failure":null,"test_failure_reason":null,"test_failure_type":null,"test_ended_at":"2026-06-02T08:44:03.979Z","test_hook_last_finished":"TestFrameworkState.TEST","automate_session_status":"passed","test_deferred":true,"logs":[]}
+2026-06-02T08:44:03.985Z CLI info [testhub:request-queue-handler]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Added the event {
+  event_type: 'TestRunFinished',
+  test_run: {
+    type: 'test',
+    framework: 'WebdriverIO-mocha',
+    uuid: 'f2a1d6f0-3639-45c4-a208-3be5df2629e9',
+    name: 'should be able to click on the active button and then close the modal',
+    body: {
+      lang: 'ecmascript',
+      code: 'async () => {\n' +
+        `    await $('//android.widget.TextView[@text="Active"]').click();\n` +
+        '\n' +
+        '    // Wait for the dialog message to appear\n' +
+        `    const dialogMessage = await $('//*[@resource-id="android:id/message"]');\n` +
+        '    await dialogMessage.waitForDisplayed();\n' +
+        '    await expect(dialogMessage).toHaveText("This button is active");\n' +
+        '\n' +
+        '    // Click OK button to close the modal\n' +
+        `    const okButton = await $('//*[@resource-id="android:id/button1"]');\n` +
+        '    await okButton.click();\n' +
+        '\n' +
+        '    // Verify modal is closed by checking the message is no longer displayed\n' +
+        '    await expect(dialogMessage).not.toBeDisplayed();\n' +
+        '  }'
+    },
+    identifier: 'should be able to click on the active button and then close the modal',
+    scope: 'Forms test suite - should be able to click on the active button and then close the modal',
+    scopes: [ 'Forms test suite' ],
+    file_name: 'test/specs/android/forms.e2e.js',
+    vc_filepath: 'test/specs/android/forms.e2e.js',
+    location: 'test/specs/android/forms.e2e.js',
+    result: 'passed',
+    duration_in_ms: 2830,
+    started_at: '2026-06-02T08:44:01.149Z',
+    finished_at: '2026-06-02T08:44:03.979Z',
+    failure: null,
+    failure_type: null,
+    failure_reason: null,
+    retry_of: null,
+    custom_metadata: undefined,
+    tags: [],
+    customRerunParam: { rerun_name: undefined },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 51265:0
+2026-06-02T08:44:04.290Z CLI info [testhub:request-queue-handler]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '148547e4-4737-408e-9ba1-f66bee3f4cd9',
+    integrations: { browserstack: [Object] }
+  }
+} to 51265:0
+2026-06-02T08:44:04.291Z CLI info [testhub:request-queue-handler]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Added the event {
+  event_type: 'TestRunStarted',
+  test_run: {
+    type: 'test',
+    framework: 'WebdriverIO-mocha',
+    uuid: '148547e4-4737-408e-9ba1-f66bee3f4cd9',
+    name: 'should be able to click on the inactive button and confirm the modal is not displayed',
+    body: {
+      lang: 'ecmascript',
+      code: 'async () => {\n' +
+        `    await $('//android.widget.TextView[@text="Inactive"]').click();\n` +
+        '\n' +
+        '    // Verify no modal dialog message appears after clicking inactive button\n' +
+        `    const dialogMessage = $('//*[@resource-id="android:id/message"]');\n` +
+        '    await expect(dialogMessage).not.toBeDisplayed();\n' +
+        '  }'
+    },
+    identifier: 'should be able to click on the inactive button and confirm the modal is not displayed',
+    scope: 'Forms test suite - should be able to click on the inactive button and confirm the modal is not displayed',
+    scopes: [ 'Forms test suite' ],
+    file_name: 'test/specs/android/forms.e2e.js',
+    vc_filepath: 'test/specs/android/forms.e2e.js',
+    location: 'test/specs/android/forms.e2e.js',
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2026-06-02T08:44:04.282Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: undefined,
+    retry_of: null,
+    custom_metadata: undefined,
+    tags: [],
+    customRerunParam: { rerun_name: undefined },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 51265:0
+2026-06-02T08:44:04.692Z CLI info [testhub:request-queue-handler]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Processing batch event [
+  {
+    event_type: 'TestRunFinished',
+    test_run: {
+      type: 'test',
+      framework: 'WebdriverIO-mocha',
+      uuid: 'f2a1d6f0-3639-45c4-a208-3be5df2629e9',
+      name: 'should be able to click on the active button and then close the modal',
+      body: {
+        lang: 'ecmascript',
+        code: 'async () => {\n' +
+          `    await $('//android.widget.TextView[@text="Active"]').click();\n` +
+          '\n' +
+          '    // Wait for the dialog message to appear\n' +
+          `    const dialogMessage = await $('//*[@resource-id="android:id/message"]');\n` +
+          '    await dialogMessage.waitForDisplayed();\n' +
+          '    await expect(dialogMessage).toHaveText("This button is active");\n' +
+          '\n' +
+          '    // Click OK button to close the modal\n' +
+          `    const okButton = await $('//*[@resource-id="android:id/button1"]');\n` +
+          '    await okButton.click();\n' +
+          '\n' +
+          '    // Verify modal is closed by checking the message is no longer displayed\n' +
+          '    await expect(dialogMessage).not.toBeDisplayed();\n' +
+          '  }'
+      },
+      identifier: 'should be able to click on the active button and then close the modal',
+      scope: 'Forms test suite - should be able to click on the active button and then close the modal',
+      scopes: [ 'Forms test suite' ],
+      file_name: 'test/specs/android/forms.e2e.js',
+      vc_filepath: 'test/specs/android/forms.e2e.js',
+      location: 'test/specs/android/forms.e2e.js',
+      result: 'passed',
+      duration_in_ms: 2830,
+      started_at: '2026-06-02T08:44:01.149Z',
+      finished_at: '2026-06-02T08:44:03.979Z',
+      failure: null,
+      failure_type: null,
+      failure_reason: null,
+      retry_of: null,
+      custom_metadata: undefined,
+      tags: [],
+      customRerunParam: { rerun_name: undefined },
+      hooks: [],
+      product_map: {
+        observability: true,
+        accessibility: false,
+        percy: false,
+        automate: false,
+        app_automate: true
+      }
+    },
+    logs: []
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '148547e4-4737-408e-9ba1-f66bee3f4cd9',
+      integrations: {
+        browserstack: {
+          product: 'app-automate',
+          session_id: '836868d76c8b47b9667e89ac8e1aef2814b51e2c',
+          capabilities: {
+            platform: 'LINUX',
+            webStorageEnabled: false,
+            takesScreenshot: true,
+            javascriptEnabled: true,
+            databaseEnabled: false,
+            networkConnectionEnabled: true,
+            locationContextEnabled: false,
+            warnings: {},
+            desired: {
+              platformName: 'Android',
+              'bstack:options': { hostName: 'Swivel-MAC-005.local' },
+              'goog:chromeOptions': {},
+              newCommandTimeout: 0,
+              deviceName: 'Samsung Galaxy S23 Ultra',
+              chromedriverPorts: [ [ 18155, 18165 ] ],
+              chromedriverArgs: [ '--adb-port=5038' ],
+              automationName: 'UIAutomator2',
+              systemPort: 8205,
+              bundleID: 'com.wdiodemoapp',
+              bundleId: 'com.wdiodemoapp',
+              skipServerInstallation: true,
+              udid: 'RZCW31Q7LGY',
+              appPackage: 'com.wdiodemoapp',
+              appActivity: 'com.wdiodemoapp.MainActivity',
+              nativeWebScreenshot: true,
+              disableSuppressAccessibilityService: true
+            },
+            platformName: 'Android',
+            'bstack:options': { hostName: 'Swivel-MAC-005.local' },
+            'goog:chromeOptions': {},
+            newCommandTimeout: 0,
+            deviceName: 'RZCW31Q7LGY',
+            chromedriverPorts: [ [ 18155, 18165 ] ],
+            chromedriverArgs: [ '--adb-port=5038' ],
+            automationName: 'UIAutomator2',
+            systemPort: 8205,
+            bundleID: 'com.wdiodemoapp',
+            bundleId: 'com.wdiodemoapp',
+            skipServerInstallation: true,
+            udid: 'RZCW31Q7LGY',
+            appPackage: 'com.wdiodemoapp',
+            appActivity: 'com.wdiodemoapp.MainActivity',
+            nativeWebScreenshot: true,
+            disableSuppressAccessibilityService: true,
+            deviceUDID: 'RZCW31Q7LGY',
+            deviceApiLevel: 33,
+            platformVersion: '13',
+            deviceScreenSize: '1080x2316',
+            deviceScreenDensity: 450,
+            deviceModel: 'SM-S918B',
+            deviceManufacturer: 'samsung',
+            pixelRatio: 2.8125,
+            statBarHeight: 75,
+            viewportRect: { left: 0, top: 75, width: 1080, height: 2031 }
+          },
+          platform: 'Android',
+          platform_version: '13',
+          browser: undefined,
+          browser_version: undefined
+        }
+      }
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    test_run: {
+      type: 'test',
+      framework: 'WebdriverIO-mocha',
+      uuid: '148547e4-4737-408e-9ba1-f66bee3f4cd9',
+      name: 'should be able to click on the inactive button and confirm the modal is not displayed',
+      body: {
+        lang: 'ecmascript',
+        code: 'async () => {\n' +
+          `    await $('//android.widget.TextView[@text="Inactive"]').click();\n` +
+          '\n' +
+          '    // Verify no modal dialog message appears after clicking inactive button\n' +
+          `    const dialogMessage = $('//*[@resource-id="android:id/message"]');\n` +
+          '    await expect(dialogMessage).not.toBeDisplayed();\n' +
+          '  }'
+      },
+      identifier: 'should be able to click on the inactive button and confirm the modal is not displayed',
+      scope: 'Forms test suite - should be able to click on the inactive button and confirm the modal is not displayed',
+      scopes: [ 'Forms test suite' ],
+      file_name: 'test/specs/android/forms.e2e.js',
+      vc_filepath: 'test/specs/android/forms.e2e.js',
+      location: 'test/specs/android/forms.e2e.js',
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2026-06-02T08:44:04.282Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: undefined,
+      retry_of: null,
+      custom_metadata: undefined,
+      tags: [],
+      customRerunParam: { rerun_name: undefined },
+      hooks: [],
+      product_map: {
+        observability: true,
+        accessibility: false,
+        percy: false,
+        automate: false,
+        app_automate: true
+      }
+    },
+    logs: []
+  }
+] to 51265:0
+2026-06-02T08:44:04.695Z CLI info  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-06-02T08:44:04.966Z CLI warn [TEST REPORTING AND ANALYTICS:webdriverio:mocha]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  TestRunFinished: event={"test_framework_name":"WebdriverIO-mocha","test_framework_version":"9.27.1","test_logs":[],"test_hooks_finished":{},"test_hooks_started":{},"test_uuid":"148547e4-4737-408e-9ba1-f66bee3f4cd9","test_result":"passed","test_hook_last_started":"TestFrameworkState.TEST","test_id":"Forms test suite - should be able to click on the inactive button and confirm the modal is not displayed","test_name":"should be able to click on the inactive button and confirm the modal is not displayed","test_code":"async () => {\n    await $('//android.widget.TextView[@text=\"Inactive\"]').click();\n\n    // Verify no modal dialog message appears after clicking inactive button\n    const dialogMessage = $('//*[@resource-id=\"android:id/message\"]');\n    await expect(dialogMessage).not.toBeDisplayed();\n  }","test_file_path":"test/specs/android/forms.e2e.js","test_location":"test/specs/android/forms.e2e.js","test_scope":"Forms test suite - should be able to click on the inactive button and confirm the modal is not displayed","test_scopes":["Forms test suite"],"test_started_at":"2026-06-02T08:44:04.282Z","automate_session_name":"Forms test suite - should be able to click on the inactive button and confirm the modal is not displayed","test_failure":null,"test_failure_reason":null,"test_failure_type":null,"test_ended_at":"2026-06-02T08:44:04.962Z","test_hook_last_finished":"TestFrameworkState.TEST","automate_session_status":"passed","test_deferred":true,"logs":[]}
+2026-06-02T08:44:04.968Z CLI info [testhub:request-queue-handler]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Added the event {
+  event_type: 'TestRunFinished',
+  test_run: {
+    type: 'test',
+    framework: 'WebdriverIO-mocha',
+    uuid: '148547e4-4737-408e-9ba1-f66bee3f4cd9',
+    name: 'should be able to click on the inactive button and confirm the modal is not displayed',
+    body: {
+      lang: 'ecmascript',
+      code: 'async () => {\n' +
+        `    await $('//android.widget.TextView[@text="Inactive"]').click();\n` +
+        '\n' +
+        '    // Verify no modal dialog message appears after clicking inactive button\n' +
+        `    const dialogMessage = $('//*[@resource-id="android:id/message"]');\n` +
+        '    await expect(dialogMessage).not.toBeDisplayed();\n' +
+        '  }'
+    },
+    identifier: 'should be able to click on the inactive button and confirm the modal is not displayed',
+    scope: 'Forms test suite - should be able to click on the inactive button and confirm the modal is not displayed',
+    scopes: [ 'Forms test suite' ],
+    file_name: 'test/specs/android/forms.e2e.js',
+    vc_filepath: 'test/specs/android/forms.e2e.js',
+    location: 'test/specs/android/forms.e2e.js',
+    result: 'passed',
+    duration_in_ms: 680,
+    started_at: '2026-06-02T08:44:04.282Z',
+    finished_at: '2026-06-02T08:44:04.962Z',
+    failure: null,
+    failure_type: null,
+    failure_reason: null,
+    retry_of: null,
+    custom_metadata: undefined,
+    tags: [],
+    customRerunParam: { rerun_name: undefined },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 51265:0
+2026-06-02T08:44:06.693Z CLI info [testhub:request-queue-handler]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Processing batch event [
+  {
+    event_type: 'TestRunFinished',
+    test_run: {
+      type: 'test',
+      framework: 'WebdriverIO-mocha',
+      uuid: '148547e4-4737-408e-9ba1-f66bee3f4cd9',
+      name: 'should be able to click on the inactive button and confirm the modal is not displayed',
+      body: {
+        lang: 'ecmascript',
+        code: 'async () => {\n' +
+          `    await $('//android.widget.TextView[@text="Inactive"]').click();\n` +
+          '\n' +
+          '    // Verify no modal dialog message appears after clicking inactive button\n' +
+          `    const dialogMessage = $('//*[@resource-id="android:id/message"]');\n` +
+          '    await expect(dialogMessage).not.toBeDisplayed();\n' +
+          '  }'
+      },
+      identifier: 'should be able to click on the inactive button and confirm the modal is not displayed',
+      scope: 'Forms test suite - should be able to click on the inactive button and confirm the modal is not displayed',
+      scopes: [ 'Forms test suite' ],
+      file_name: 'test/specs/android/forms.e2e.js',
+      vc_filepath: 'test/specs/android/forms.e2e.js',
+      location: 'test/specs/android/forms.e2e.js',
+      result: 'passed',
+      duration_in_ms: 680,
+      started_at: '2026-06-02T08:44:04.282Z',
+      finished_at: '2026-06-02T08:44:04.962Z',
+      failure: null,
+      failure_type: null,
+      failure_reason: null,
+      retry_of: null,
+      custom_metadata: undefined,
+      tags: [],
+      customRerunParam: { rerun_name: undefined },
+      hooks: [],
+      product_map: {
+        observability: true,
+        accessibility: false,
+        percy: false,
+        automate: false,
+        app_automate: true
+      }
+    },
+    logs: []
+  }
+] to 51265:0
+2026-06-02T08:44:06.695Z CLI info  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-06-02T08:44:12.138Z CLI info [sdk:service]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Driver initialized as primary driver: platformIndex=0
+2026-06-02T08:44:32.062Z CLI info  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2026-06-02T08:44:32.067Z CLI info  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  [PRODUCTION] Making PUT request to https://collector-observability.browserstack.com
+2026-06-02T08:44:33.004Z CLI info [testhub:module]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  stopBuild: jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy request={"finished_at":"2026-06-02T08:44:32.060Z","finished_metadata":[],"custom_metadata":null} response={"data":""}
+2026-06-02T08:44:33.006Z CLI info  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2026-06-02T08:44:34.323Z CLI info [TEST REPORTING AND ANALYTICS:module]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Visit https://automation.browserstack.com/builds/jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy to view build report, insights, and many more debugging information all at one place!
+2026-06-02T08:44:34.326Z CLI info [main]  [jknbrmxea08umxri0xhpaa83gqo2qqw6gqraznxy]  [b807e051-6b49-4684-9cba-7431243e8fb9]  Received graceful signal termination (SIGTERM), performing cleanup

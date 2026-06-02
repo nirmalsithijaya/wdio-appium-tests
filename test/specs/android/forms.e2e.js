@@ -1,6 +1,6 @@
 describe("Forms test suite", () => {
   beforeEach(async () => {
-    // Tap new" command -> https://webdriver.io/docs/api/mobile/tap
+    //Tap new" command -> https://webdriver.io/docs/api/mobile/tap
     // When I executed the tap command on browserstack it was not working, so I changed it to click.
     await $("~Forms").click();
   });
